@@ -1,10 +1,11 @@
 """rename DB_URL to DATABASE_URL
 
 Revision ID: aff1c0c69f3f
-Revises: 
+Revises:
 Create Date: 2025-08-08 11:43:58.938559
 
 """
+
 from typing import Sequence, Union
 
 from alembic import op
@@ -12,7 +13,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'aff1c0c69f3f'
+revision: str = "aff1c0c69f3f"
 down_revision: Union[str, Sequence[str], None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None

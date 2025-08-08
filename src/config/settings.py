@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from pydantic_settings import BaseSettings
 
+
 class Settings(BaseSettings):
     BASE_DIR: Path = Path(__file__).parent.parent
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./test.db")
@@ -13,5 +14,6 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+
 
 settings = Settings()
